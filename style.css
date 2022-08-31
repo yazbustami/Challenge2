@@ -1,0 +1,121 @@
+body {
+	background-color: rgb(0, 0, 0);
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.objective {
+	max-width: 1000px;
+	margin: auto;
+}
+
+/* the mini challenge gave me the idea to use gradient for background */
+header {
+	display: flex;
+	align-items: center;
+	background-image: linear-gradient(to right, rgb(162, 11, 250) , rgb(255, 2, 95)); 
+	justify-content: space-between;
+	color: black;
+}
+
+/* "Hi I'm Yasmin. Welcome...etc */
+h1{
+	color: rgb(255, 255, 255);
+}
+
+nav {
+	display: flex;
+}
+
+nav a {
+	font-size: medium;
+	padding: 20px;
+	color: rgb(0, 0, 0);
+}
+/* when hovering over nav bar, changes to white */
+nav a:hover {
+	color: rgb(255, 255, 255);
+}
+
+#AboutMe {
+	display: flex;
+	padding-top: 50px;
+	justify-content: space-between;
+}
+
+/* About Me, work, Contact me colors on page. positioning with flex-basis */
+h2 {
+	flex-basis: 50%;
+	color: rgb(255, 255, 255);
+}
+
+#ME {
+	font-size: large;
+	color: white;
+}
+
+#Work {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.Challenge {
+	margin: 20px;
+}
+
+#challenge1 {
+	width: 100%;
+	justify-self: center;
+}
+
+#challenge1 img {
+	width: 100%;
+	flex: 1 1 auto;
+}
+
+.Challenge header {
+	font-size: x-large;
+	justify-self: center;
+}
+
+#FakeExample img, #FakeExample2 img, #FakeExample3 img {
+	width: 100%;
+}
+
+#ContactMe {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#ContactMe a , p {
+	font-size: large;
+	padding: 20px;
+	color: white;
+}
+
+#ContactMe a:hover {
+	color: rgb(255, 2, 95);
+}
+
+/* needed for changing of screen sizes */
+@media screen and (max-width:768px) {
+	header {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	#AboutMe {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#Work {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#ContactMe {
+		flex-direction: column;
+		align-items: center;
+	}
+}
